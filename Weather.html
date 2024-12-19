@@ -1,0 +1,43 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="weather-title">Weather Forecast</h1>
+
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button id="fetch-weather-btn">Get Weather</button>
+
+        <div id="weather-info">
+            <h3 id="city-name"></h3>
+            <p id="temperature"></p> <!-- Display Average Temperature -->
+            <p id="humidity"></p> <!-- Display Humidity -->
+            <p id="rainfall"></p> <!-- Display Precipitation -->
+            <p id="wind-speed"></p> <!-- Display Wind Speed -->
+            <p id="heat-waves"></p> <!-- Display Heat Waves Status -->
+            <p id="cold-winter"></p> <!-- Display Cold Winter Status -->
+        </div>
+
+        <h2>Weather Trends</h2>
+        <div id="weather-trends">
+            <!-- Ensure these divs exist with the correct ids -->
+            <div id="hot-weather-graph" class="graph-container"></div>
+            <div id="cold-weather-graph" class="graph-container"></div>
+            <div id="future-precipitation-graph" class="graph-container"></div>
+            <div id="future-humidity-graph" class="graph-container"></div>
+            <div id="future-temperature-graph" class="graph-container"></div>
+        </div>
+
+        <!-- Debugging info -->
+        <div id="debug-info"></div>
+    </div>
+
+    <!-- The script should be loaded at the end of the body to ensure the DOM is ready -->
+    <script src="script.js" defer></script>
+</body>
+</html>
